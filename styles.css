@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header{
+    max-height: 11vh;
+    height: 11vh;
+    max-width: 100vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4B6344;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.main-nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-link > img{
+    max-width: 500px;
+    max-height: 300px;
+    width: 300px;
+    height: 100px;
+    opacity: 1;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+
+.list-item{
+    color: #F5F2E7;
+    font-family: 'Google sans';
+    font-size: 1.4rem;
+}
+
+.link{
+    text-decoration: none;
+    color: #F5F2E7;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s all ease-in-out;
+}
+
+.link:hover{
+    background-color: #F5F2E7;
+    color: #4B6344;
+}
+
+main{
+    max-width: 100vw;
+    width: 100vw;
+}
+.hero-section{
+    height: 100vh;
+    background-image: url(images/hero_section.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section> .main-title{
+    color: #F5F2E7;
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-family: 'Sour gummy';
+}
+
+.gallery{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f5f5;
+}
+.gallery > .gallery-title{
+    color: #3C2415;
+    height: 10%;
+    font-family: 'Sour gummy';
+    font-size: 5rem;
+}
+
+.gallery-grid{
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.product-card{
+    height: 40vh;
+    width: 30vw;
+    overflow: hidden;
+    background-color: #82977b;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+    box-shadow: 0 0 10px 10px #3c241525;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+}
+.product-card:hover{
+    transform: scale(1.01);
+}
+.product-card > .image-wrapper{
+    width: 50%;
+    height: 90%;
+    position: static;
+}
+.product-card > .image-wrapper > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: static;
+}
+.product-card > .product-info{
+    max-width: 50%;
+}
+.product-card > .product-info h3{
+    width: 100%;
+    color: #F5F2E7;
+    text-align: center;
+    text-wrap: wrap;
+    font-size: 1.9rem;
+    font-family: 'Google sans';
+}
+.product-card > .product-info > .price{
+    color: #F5F2E7;
+    font-size: 2rem;
+    font-family: 'Sour gummy';
+}
+.values{
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    
+}
+.values-title{
+    color: #3C2415;
+    font-size: 6rem;
+    font-family: 'Sour gummy';
+}
+
+.flex-wrapper{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #c2c9cb23;
+}
+
+.value-card{
+    background-color: #fff;
+    width: 30vw;
+    height: 30vh;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:auto;
+}
+.value-card h3{
+    font-family: 'Google sans';
+    color: #F5F2E7;
+    font-size: 2rem;
+    text-transform: uppercase;
+    cursor: auto;
+}
+
+.value-card:nth-child(1){
+    background-color: #4d544b;
+}
+.value-card:nth-child(2){
+    background-color: #485744;
+}
+.value-card:nth-child(3){
+    background-color: #3a4b36;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    width: 100vw;
+    background-color: #3C2415;
+    padding: 30px;
+}
+
+address{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+address > h2{
+    color: #F5F2E7;
+    font-family: 'Google sans';
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.location-list{
+    list-style: none;
+    text-align: center;
+    font-family: 'Google sans';
+    color: #f6f5f5;
+}
+
+.location-list > .address > a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s all ease-in-out;
+}
+
+.location-list > .address > a:hover{
+    color: #F5F2E7;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.social-media > h2{
+    font-family: 'Google sans';
+    color: #F5F2E7;
+    font-size: 2rem; 
+    text-align: center;
+}
+
+.sm-list{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sm-item{
+    color: #f6f5f5;
+    font-family: 'Google sans';
+    font-size: 2.5rem;
+}
+.sm-link{
+    text-decoration: none;
+    color: #F5F2E7;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.4s all ease-in-out;
+}
+
+.sm-link:hover{
+    background-color: #F5F2E7;
+    color: #3C2415;
+}
+
+@media screen and (max-width: 991px){
+    .main-nav{
+        justify-content: center;
+    }
+    .logo-link{
+        display: none;
+    }
+    .nav-list{
+        width: 100%;
+    }
+
+    .hero-section {
+        /* Cambiamos el alto fijo por uno flexible con límites */
+        height: auto; 
+        min-height: 60vh; 
+        max-height: 600px; 
+        
+        width: 100vw;
+        background-position: center;
+        background-attachment: scroll;
+        padding: 40px 20px; /* Espacio para que el texto no toque los bordes */
+    }
+
+    .hero-section > .main-title {
+        font-size: 3.5rem; /* Un poco más grande para que sea legible en tablet */
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .gallery, .values, footer{
+        display: none;
+    }
+
+}
